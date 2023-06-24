@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-image.png";
+import homeImag from "@/assets/home-image.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ export default function Home() {
       <div className="absolute top-0">
         <div className="relative">
           <Image
-            src={heroImage}
+            src={homeImag}
             alt="Hero image"
             className="object-cover object-center  w-full aspect-1 sm:aspect-2"
           />
