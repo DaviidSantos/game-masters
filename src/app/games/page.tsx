@@ -66,6 +66,7 @@ export default function Games() {
 
       setGenres([...genres, ...uniqueGenres]);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [games]);
 
   useEffect(() => {
@@ -76,6 +77,7 @@ export default function Games() {
         )
       );
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gameTitle]);
 
   const currentPageGames = filteredGames.slice(firstIndex, lastIndex);
