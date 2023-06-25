@@ -21,7 +21,7 @@ export default function useApi<T = unknown>(url: string) {
 
   useEffect(() => {
     fetchData();
-  });
+  }, []);
 
   return { data, error };
 }
