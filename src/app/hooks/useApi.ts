@@ -12,6 +12,7 @@ export class FetchingError extends Error {
 export default function useApi<T = unknown>(url: string) {
   const [data, setData] = useState<T | null>(null);
   const [error, setError] = useState<Error | null>(null);
+  const [isFetching, setIsFetching] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
 
   const fetchData = async () => {
@@ -51,12 +52,13 @@ export default function useApi<T = unknown>(url: string) {
 
           console.log(errorMessage);
         }
-      });
+      })
+      .finally(() => setIsFetching(false));
   };
 
   useEffect(() => {
     fetchData();
   }, []);
 
-  return { data, error, errorMessage };
+  return { data, error, errorMessage, isFetching };
 }
