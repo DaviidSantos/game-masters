@@ -2,6 +2,8 @@
 
 Bem vindo(a)! Este rerpositório contém a solução do desafio da empresa App Master
 
+![Tela Inicial](./.github/tela_inicial.png)
+
 # 🧠 Sobre
 
 O desafio é desenvolver uma simples aplicação que liste os jogos retornados por uma API com os seguintes requisitos:
