@@ -18,7 +18,7 @@ export const Card = ({
   genre,
 }: CardProps) => {
   return (
-    <Link href={`${id}`} className="block rounded-md overflow-hidden bg-zinc-900 max-w-[300px] h-[375px] shadow-sm shadow-black hover:scale-105 group">
+    <Link href={`${id}`} className="relative block rounded-md overflow-hidden bg-zinc-900 max-w-[300px] h-[375px] md:h-[325px] lg:h-[375px] shadow-sm shadow-black hover:scale-105 group">
       <div className="relative">
         <Image
           src={thumbnail}
